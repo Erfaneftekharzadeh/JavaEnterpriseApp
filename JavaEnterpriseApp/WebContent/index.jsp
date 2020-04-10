@@ -9,6 +9,9 @@
 <body>
 <form action="welcome.jsp">
 <input type="text" name="name">
+<br/>
+<input type="text" name="family">
+<br/>
 <input type="submit" value="save">
 </form>
 </body>
