@@ -8,6 +8,8 @@
 </head>
 <body>
 <% out.print(request.getParameter("name")); %>
+<br/>
+<% out.print(request.getParameter("family")); %>
 
 
 
