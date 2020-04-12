@@ -7,10 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/ControllerServlet" method="post">  
-Name:<input type="text" name="name"><br>  
-Password:<input type="password" name="password"><br>  
-<input type="submit" value="login">  
-</form> 
+<%@page import="com.javatpoint.LoginBean"%>  
+  
+<p>You are successfully logged in!</p>  
+<%  
+LoginBean bean=(LoginBean)request.getAttribute("bean");  
+out.print("Welcome, "+bean.getName());  
+%>
 </body>
 </html>
